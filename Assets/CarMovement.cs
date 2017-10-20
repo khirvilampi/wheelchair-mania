@@ -31,7 +31,8 @@ public class CarMovement : MonoBehaviour {
     private GUIStyle guiStyle = new GUIStyle(); //create a new variable
 
 
-    void Start () {
+    void Start()
+    {
 
     }
     // Update is called once per frame
@@ -156,6 +157,7 @@ public class CarMovement : MonoBehaviour {
                         WheelColFL.brakeTorque = 0;
                         if (distLeft > 20) {
                             v = v + torque;
+
                         } else if(distLeft < -20)
                         {
                             v = v - torque;
