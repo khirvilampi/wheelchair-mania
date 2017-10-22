@@ -68,6 +68,9 @@ ModelImporter:
     4300000: Cube
     7400000: Default Take
     7400002: LeftArmFor
+    7400004: Idle
+    7400006: rightHandFor
+    7400008: rightArmFor
     9500000: //RootNode
     13700000: Cube
   materials:

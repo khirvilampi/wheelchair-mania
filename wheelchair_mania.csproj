@@ -80,6 +80,7 @@
   <ItemGroup>
     <Compile Include="Assets\AntiRollBar.cs" />
     <Compile Include="Assets\CarMovement.cs" />
+    <Compile Include="Assets\LoadSceneOnClick.cs" />
     <Compile Include="Assets\Wheel.cs" />
     <Compile Include="Assets\avatarAnimations.cs" />
   </ItemGroup>

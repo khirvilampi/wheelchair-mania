@@ -33,7 +33,6 @@ public class CarMovement : MonoBehaviour {
 
     void Start()
     {
-
     }
     // Update is called once per frame
     void Update () {
@@ -144,6 +143,7 @@ public class CarMovement : MonoBehaviour {
                         if (distRight > 20)
                         {
                             a = a + torque;
+                            avatarAnimations.anim.SetTrigger("spinWheelRight");
                         } else if(distRight < -20)
                         {
                             a = a - torque;
@@ -157,6 +157,7 @@ public class CarMovement : MonoBehaviour {
                         WheelColFL.brakeTorque = 0;
                         if (distLeft > 20) {
                             v = v + torque;
+                            avatarAnimations.anim.SetTrigger("spinWheelLeft");
 
                         } else if(distLeft < -20)
                         {
@@ -175,10 +176,12 @@ public class CarMovement : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.W))
         {
             v = v + torque;
+            avatarAnimations.anim.SetTrigger("spinWheelLeft");
         }
         if (Input.GetKeyDown(KeyCode.E))
         {
             a = a + torque;
+            avatarAnimations.anim.SetTrigger("spinWheelRight");
         }
         /*if (Input.GetKeyUp(KeyCode.W))
         {
